@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Class Base Project</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row d-flex justify-content-around">
+            <div class="col-md-4">
+                <div class="card shadow my-5">
+                    <div class="card-body">
+                        <h2>Add New Devs</h2>
+                        <div class="msg">
+                            
+                        </div>
+                        <form method="POST" id="devs_add_form">
+                            <div class="my-2">
+                                <label for="">Name</label>
+                                <input type="text" name="name" class="form-control">
+                            </div>
+                            <div class="my-2">
+                                <label for="">Cell</label>
+                                <input type="text" name="cell" class="form-control">
+                            </div>
+                            <div class="my-2">
+                                <label for="">Location</label>
+                                <input type="text" name="location" class="form-control">
+                            </div>
+                            <div class="my-2">
+                                <label for="">Photo</label>
+                                <input type="text" name="photo" class="form-control">
+                            </div>
+                            <div class="my-2">
+                                <input type="submit" class="btn btn-primary w-100">
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card shadow my-5">
+                    <div class="card-body">
+                        <h2>Our Developers</h2>
+                        
+                        <table class="table table-sm table-striped table-dark table-bordered align-middle text-center">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>Cell</th>
+                                    <th>Location</th>
+                                    <th>Photo</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="devs-list" class="">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="./assets/js/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./app.js"></script>
+</body>
+</html>
